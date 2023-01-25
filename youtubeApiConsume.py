@@ -2,6 +2,7 @@ from pyyoutube import Api
 from randomDateTime import get_dates
 from randomLatlon import get_latlon
 from randomWord import get_word
+from handleMongo import db_connect
 import os 
 
 def getVideoId(video):
@@ -35,3 +36,4 @@ def fetch():
       print('no results')
 
 fetch()
+db_connect()
