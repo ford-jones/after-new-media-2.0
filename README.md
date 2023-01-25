@@ -9,7 +9,7 @@ python3 --version
 
 If you don't, install the latest version using homebrew: 
 ```
-brew install python
+brew install python3
 ```
 
 # Setup your python virtual environment
