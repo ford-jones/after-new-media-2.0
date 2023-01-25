@@ -23,7 +23,7 @@ mkdir pyEnv && cd pyEnv
 ```
 python3 -m venv env
 ```
-Now if list the current directory you will notice a new directory has been created called env.
+Now when listing the current directory you will notice a new folder has been created called env.
 
 3. The environment needs to be activated. Do this by setting the source of the env like so:
 ```
