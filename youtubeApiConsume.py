@@ -2,6 +2,7 @@ from pyyoutube import Api
 from randomDateTime import get_dates
 from randomLatlon import get_latlon
 from randomWord import get_word
+from handleMongo import db_connect
 import os 
 
 def getVideoId(video):
@@ -26,11 +27,12 @@ def fetch():
     )
     videoIdList = list(map(getVideoId, r.items))
     length  = len(videoIdList)
-    print(length)
+    print('num of results: ', length)
     if length > 0:
       video = api.get_video_by_id(video_id=videoIdList[length - 1])
-      print(video.items[0])
-      print(video.items[0].statistics.viewCount)
+      print('last index: ', video.items[0])
+      print('view count: ', video.items[0].statistics.viewCount)
+      db_connect(usr=os.environ.get('MONGODB_USR'), pw = os.environ.get('MONGODB_PW'), db = os.environ.get('MONGODB_DB'), cltn = os.environ.get('MONGODB_COLLECTION'), vid = video.items[0])
     else:
       print('no results')
 
