@@ -9,7 +9,7 @@ def getVideoId(video):
     return video.id.videoId 
 
 def fetch():
-    api = Api(api_key=os.environ.get('API_KEY'))
+    api = Api(api_key=os.environ.get('API_KEY2'))
     dates = get_dates()
     latlon = get_latlon()
     word = get_word()
@@ -30,10 +30,11 @@ def fetch():
     print('num of results: ', length)
     if length > 0:
       video = api.get_video_by_id(video_id=videoIdList[length - 1])
-      print('last index ID: ', video.items[0])
+      print('last index: ', video.items[0])
       print('view count: ', video.items[0].statistics.viewCount)
+      db_connect(pw = os.environ.get('MONGODB_PW'), vid = video.items[0])
     else:
       print('no results')
 
 fetch()
-db_connect()
+# db_connect(pw = os.environ.get('MONGODB_PW'))
