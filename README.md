@@ -56,7 +56,8 @@ pip install -r requirements.txt
 3. Register an account with Youtube development and request an API key, be sure to take note of it: https://developers.google.com/youtube
 The free API key will give you a cap of 50 searches every 24 hours, upgrade your account for more. 
 
-4. You will also need to make an account with mongoDB Atlas. Create a new database with a single user (Note the username and password). In the configuration you will be prompted to authenticate requests privately or over a network. The choice is yours but be sure that any IP you want to give access to the database is included in your IP access list under the network access tab. 
+4. You will also need to make an account with mongoDB Atlas: https://www.mongodb.com/cloud/atlas/register 
+Create a new database with a single user (Note the username and password). In the configuration you will be prompted to authenticate requests privately or over a network. The choice is yours but be sure that any IP you want to give access to the database is included in your IP access list under the network access tab. 
 
 When setting up your cluster make sure to take note of the name of your database and also its' collection.
 
