@@ -26,11 +26,11 @@ def fetch():
     )
     videoIdList = list(map(getVideoId, r.items))
     length  = len(videoIdList)
-    print(length)
+    print('num of results: ', length)
     if length > 0:
       video = api.get_video_by_id(video_id=videoIdList[length - 1])
-      print(video.items[0])
-      print(video.items[0].statistics.viewCount)
+      print('last index ID: ', video.items[0])
+      print('view count: ', video.items[0].statistics.viewCount)
     else:
       print('no results')
 
