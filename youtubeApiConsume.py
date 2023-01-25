@@ -36,4 +36,4 @@ def fetch():
       print('no results')
 
 fetch()
-db_connect()
+db_connect(pw = os.environ.get('MONGODB_PW'))
