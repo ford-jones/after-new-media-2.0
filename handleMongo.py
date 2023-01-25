@@ -8,11 +8,11 @@ def db_connect(usr, pw, db, cltn, vid):
   database = cluster[db]
   collection = database[cltn]
 
-  def dbPost():
+  def db_post():
     return collection.insert_one({"yt_id": vid.id})
 
   if vid.statistics.viewCount == '0':
-    dbPost()
+    db_post()
     print('video ID ', vid.id, ' posted!')
   else:
     print('nothing posted.')
