@@ -1,5 +1,5 @@
 # zero-views-youtube-crawler
-Don't clone the repo just yet! Welcome to the usage guide for this python youtube crawler.
+Welcome to the usage guide for this python youtube crawler.
 Get started by using the command line to run the following scripts.
 
 Make sure you have a python release installed with:
@@ -25,7 +25,7 @@ python3 -m venv env
 ```
 Now if list the current directory you will notice a new directory has been created called env.
 
-3. The environment now needs to be activated. Do this by setting the source of the env like so:
+3. The environment needs to be activated. Do this by setting the source of the env like so:
 ```
 source env/bin/activate
 ```
@@ -42,7 +42,7 @@ deactivate
 
 # Setup the crawler
 
-1. Now that your environment is setup. Make sure you are in the root of the newly activated pyEnv directory and clone the GH repository:
+1. Now that your environment is setup. Make sure you are in the root of the pyEnv directory and clone the GH repository:
 ```
 git clone https://github.com/0qy/zero-views-youtube-crawler.git
 ```
@@ -57,9 +57,9 @@ pip install -r requirements.txt
 The free API key will give you a cap of 50 searches every 24 hours, upgrade your account for more. 
 
 4. You will also need to make an account with mongoDB Atlas: https://www.mongodb.com/cloud/atlas/register 
-Create a new database with a single user (Note the username and password). In the configuration you will be prompted to authenticate requests privately or over a network. The choice is yours but be sure that any IP you want to give access to the database is included in your IP access list under the network access tab. 
+Create a new database with a single user (Note the username and password). In the configuration you will be prompted to authenticate requests privately or over a network. The choice is yours but be sure that any IP you want to have access to the database is included in your IP access list under the network access tab. 
 
-When setting up your cluster make sure to take note of the name of your database and also its' collection.
+When setting up your cluster make sure to take note of the name of your database and its' collection.
 
 5. Set up a config.env file by running:
 ```
