@@ -2,14 +2,14 @@
 Welcome to the usage guide for this python youtube crawler.
 Get started by using the command line to run the following scripts.
 
-Make sure you have a python release installed with:
+Make sure you have a python3 release installed with:
 ```
-python --version
+python3 --version
 ```
 
 If you don't, install the latest version using homebrew: 
 ```
-brew install python
+brew install python3
 ```
 
 # Setup your python virtual environment
