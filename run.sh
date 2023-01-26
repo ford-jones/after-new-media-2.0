@@ -4,4 +4,9 @@ set -a
 source config.env
 set +a
 
-python3 youtubeApiConsume.py
+
+    echo "Press [CTRL+C] to stop.."
+while :
+do
+    python3 youtubeApiConsume.py
+done
