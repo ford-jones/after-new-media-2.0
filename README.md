@@ -1,6 +1,6 @@
 # zero-views-youtube-crawler
-Welcome to the usage guide for this python youtube crawler.
-This project has a seacond half, find it here: https://github.com/ford-jones/zero-views-yt-frontend
+Welcome to the usage guide for this python youtube crawler.                                     
+This project has a seacond half, find it here: https://github.com/ford-jones/zero-views-yt-frontend                       
 Get started by using the command line to run the following scripts.
 
 Make sure you have a python3 release installed with:
