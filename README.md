@@ -1,4 +1,6 @@
-# zero-views-youtube-crawler
+# After New Media 2.0
+Project for artist William Linscott.
+
 Welcome to the usage guide for this python youtube crawler.                                     
 This project has a seacond half, find it here: https://github.com/ford-jones/zero-views-yt-frontend                       
 Get started by using the command line to run the following scripts.
