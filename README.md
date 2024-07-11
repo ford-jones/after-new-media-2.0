@@ -1,5 +1,8 @@
-# zero-views-youtube-crawler
-Welcome to the usage guide for this python youtube crawler.
+# After New Media 2.0
+Project for artist William Linscott.
+
+Welcome to the usage guide for this python youtube crawler.                                     
+This project has a seacond half, find it here: https://github.com/ford-jones/zero-views-yt-frontend                       
 Get started by using the command line to run the following scripts.
 
 Make sure you have a python3 release installed with:
@@ -54,7 +57,7 @@ pip install -r requirements.txt
 ```
 
 3. Register an account with Youtube development and request an API key, be sure to take note of it: https://developers.google.com/youtube
-The free API key will give you a cap of 50 searches every 24 hours, upgrade your account for more. 
+The API key will have a set quota of how many request it can make per 24hours. 
 
 4. You will also need to make an account with mongoDB Atlas: https://www.mongodb.com/cloud/atlas/register 
 Create a new database with a single user (Note the username and password). In the configuration you will be prompted to authenticate requests privately or over a network. The choice is yours but be sure that any IP you want to have access to the database is included in your IP access list under the network access tab. 
